@@ -1,0 +1,50 @@
+{
+  "name": "enabler-dao-platform",
+  "version": "0.1.0",
+  "description": "A comprehensive platform for building and operating Decentralized Autonomous Organizations (DAOs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enablerdao/enabler-dao-platform.git"
+  },
+  "keywords": [
+    "dao",
+    "blockchain",
+    "ethereum",
+    "governance",
+    "defi",
+    "web3"
+  ],
+  "author": "EnablerDAO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enablerdao/enabler-dao-platform/issues"
+  },
+  "homepage": "https://github.com/enablerdao/enabler-dao-platform#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}
